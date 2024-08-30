@@ -1,16 +1,5 @@
 name: "Build and push OCI image"
 on:
-  push:
-    branches:
-    - main
-    - master
-    tags:
-    - v1.*
-    - v2.*
-  pull_request:
-    branches:
-    - main
-    - master
   workflow_call:
 jobs:
   build_and_push:
