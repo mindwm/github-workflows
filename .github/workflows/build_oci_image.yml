@@ -1,6 +1,9 @@
 name: "Build and push OCI image"
 on:
   workflow_call:
+    secrets:
+      REGISTRY_TOKEN:
+        required: true
 jobs:
   build_and_push:
     runs-on: ubuntu-latest
